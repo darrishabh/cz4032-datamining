@@ -1,3 +1,3 @@
-# cz4032-datamining
+# cz4032-bean-mining
 
-I have uploaded the csv files, please take a look
+I have "not" uploaded the csv files, please "dont" take a look
