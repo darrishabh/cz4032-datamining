@@ -19,6 +19,7 @@ Next, In the directory:
 ------------
 
 Step 1: Install the dependencies: `$ pip install -e .`
+
 Step 2: Create the csv file for each json: `python json_to_csv_converter.py [abc].json`  #[abc] -> json file name
 
 Your csv file is then ready!
