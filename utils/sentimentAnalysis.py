@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as sia
 import string
 
 
@@ -11,7 +11,7 @@ class SentimentAnalyzer:
     """
 
     def __init__(self):
-        self.sid = SentimentIntensityAnalyzer()
+        self.sid = sia()
 
     def getScore(self, text: str) -> dict:
         """
@@ -22,6 +22,7 @@ class SentimentAnalyzer:
             'pos' : <score>
         }
         ```
+        for a particular `text`
         """
         text = text.translate(str.maketrans('', '', string.punctuation))
         score = self.sid.polarity_scores(text)

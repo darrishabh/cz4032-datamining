@@ -1,2 +1,3 @@
 sampleData
 .vscode
+*__pycache__
